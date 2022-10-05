@@ -7,12 +7,14 @@ const Message = require('./models/Message')
 const app = express();
 app.use(express.json());
 
-const PORT = 5000;
+require('dotenv').config()
+const PORT = process.env.PORT || 5000;
+app.use(express.json())
 
-const MONGO_URI = "mongodb+srv://anand123:anand123@nursery-plant.mpanrx9.mongodb.net/chitchat?retryWrites=true&w=majority"
 
-mongoose.connect(MONGO_URI, ()=>{
-  console.log("Connected to MongoDB");
+
+mongoose.connect(process.env.MONGODB_URI, () => {
+  console.log("connected to MongoDB Database.....")
 })
 
 app.get('/health', (req, res)=>{

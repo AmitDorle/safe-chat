@@ -1,0 +1,23 @@
+.message-container-outgoing
+{
+    display: flex;
+    justify-content:end;
+    padding: 5px;
+    margin: 5px;
+}
+.message-container-incoming
+{
+    display: flex;
+}
+.message-content
+{
+    border: 1px solid black;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px;
+}
+.email
+{
+    display: block;
+    margin-bottom: 8px;
+}

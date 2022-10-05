@@ -3,6 +3,7 @@ import {useState} from 'react'
 import axios from 'axios';
 
 import './Login.css'
+import { Link } from 'react-router-dom';
 function Login() {
 
   const [email, setEmail] = useState("");
@@ -20,6 +21,7 @@ function Login() {
         alert("Logged in successful")
         const user = response.data.data;
         localStorage.setItem('user',JSON.stringify(user))
+        window.location= '/'
       }
       else
       {
@@ -50,6 +52,7 @@ function Login() {
         </div>
 
         <button type="button" className="btn btn-warning w-100" onClick={loginUser}>Login</button>
+        <Link to='/signup'>Create a new account</Link>
       </div>
     </div>
   </div>

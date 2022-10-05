@@ -1,0 +1,23 @@
+.chat-container
+{
+    background-color: rgb(193, 228, 228);
+    padding: 5px;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 200vh;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+.Send-Button
+{
+    
+}
+.txt-box
+{
+    border: 2px solid black;
+    margin: 3px;
+    width: 615px;
+    height: 50px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 3px red;
+}

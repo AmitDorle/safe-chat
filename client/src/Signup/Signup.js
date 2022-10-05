@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
 import axios from 'axios';
-
+import { Link } from 'react-router-dom';
 import './Signup.css'
 function Signup() {
 
@@ -22,6 +22,8 @@ function Signup() {
     setPassword("");
 
     alert('User added successfully!')
+
+    window.location = '/login'
   }
 
 
@@ -51,6 +53,7 @@ function Signup() {
         </div>
 
         <button type="button" className="btn btn-warning w-100" onClick={addUser}>Create An Account</button>
+        <Link to='/login'>Already have an account</Link>
       </div>
 
       
