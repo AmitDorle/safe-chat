@@ -2,22 +2,58 @@
 {
     background-color: rgb(193, 228, 228);
     padding: 5px;
-    border-radius: 15px 15px 15px 15px;
-    max-width: 200vh;
-    max-height: 85vh;
+    border-radius: 20px 20px 20px 20px;
+    max-height: 78vh;
     overflow-y: scroll;
+    border: 2px solid red;
 }
 
 .Send-Button
 {
-    
+    border-radius:50%;
+}
+.send-img
+{
+    height: 26px;
+    width: 30px;
+    border-radius:50px;
 }
 .txt-box
 {
-    border: 2px solid black;
+    border: 2px solid rgb(44, 237, 47);
     margin: 3px;
-    width: 615px;
+    width: 300px;
     height: 50px;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 1px 1px 3px red;
+}
+.logout-button
+{
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+} 
+.Dashboard-container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: aliceblue;
+}
+.Greeting
+{
+    color: blue;
+    text-decoration-style: dashed;
+    text-shadow: 1px 1px 3px red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.message-typing-box
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
 }

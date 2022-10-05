@@ -8,13 +8,27 @@
 .message-container-incoming
 {
     display: flex;
+    justify-content:start;
+    padding: 5px;
+    margin: 5px;
 }
-.message-content
+.message-content-outgoing
 {
-    border: 1px solid black;
-    max-width: 400px;
+    border: 1px solid rgb(245, 48, 48);
+    max-width: 600px;
     padding: 10px;
     margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px 10px 10px 10px;
+}
+.message-content-incoming
+{
+    border: 1px solid rgb(237, 27, 27);
+    max-width: 600px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(95, 216, 172);
+    border-radius: 10px 10px 10px 10px;
 }
 .email
 {

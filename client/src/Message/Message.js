@@ -4,7 +4,7 @@ import './Message.css'
 function Message(props) {
   return (
     <div className={`message-container-${props.type}`}>
-    <div className={`message-content ${Message.type}`}>
+    <div className={`message-content-${props.type}`}>
       {
         props.type === 'incoming' ? 
         <b className='email'>{props.from}</b>
